@@ -112,7 +112,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     /* definí un alto o padding para que la imagen tenga espacio de visibilidad */
-    min-height: 450px;
+    min-height: 600px;
     /* Flexbox para centrar el contenido vertical y horizontalmente */
     display: flex;
     flex-direction: column;
@@ -310,8 +310,72 @@ Con flex-wrap, en celular el mapa baja abajo de los datos.
     border-radius: 8px;
     border: none;
 }
+/* ---------------------------------------------------------------------------
+7. FORMULARIO DE CONTACTO
+   --------------------------------------------------------------------------- */
+#contacto {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-contacto label {
+    font-weight: 600;
+    color: #5C766D;
+    font-size: 0.95rem;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+outline: none;
+border-color: #5C766D;
+}
+
+.boton-enviar {
+    background-color: #5C766D;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.boton-enviar:hover {
+    background-color: #5C766D;
+}
+
 /* --------------------------------------------------------------------------
-7. FOOTER 
+8. FOOTER 
 -------------------------------------------------------------------------- */
 .footer {
     background-color: #5C766D;
