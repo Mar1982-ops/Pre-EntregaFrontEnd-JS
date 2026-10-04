@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarAMar | Estudio de Yoga & Bienestar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Conexión previa p optimizar la carga dde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importo Didact Gothic la fuente q me gustó p mi página -->
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <!-- La hoja de estilo debe ir después -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!--############################ HEADER ###############################  -->
+<header>
+    <div class="contenedor barra-nav">
+        <div class="logo">MarAMar<span>Yoga</span></div>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#practicas">Prácticas</a></li>
+                <li><a href="estudio">El Estudio</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#reserva" class="boton-menu">Reservar Clase</a></li>
+            </ul>
+        </nav>
+    
+    </div>
+</header>
+
+<!-- ############################ MAIN ###############################   -->
+<main>
+
+    <!-- Banner de bienvenida (Hero) -->
+    <section class="hero">
+        <h1>Conectá con tu paz interior</h1>
+        <p>Encontrá el equilibrio entre cuerpo, mente y espíritu. Clases presenciales y online para todos los niveles.</p>
+        <a href="#practicas" class="boton">Explorar Prácticas</a>
+    </section>
+
+    <!-- Seccion con las tarjetas de prácticas de yoga -->
+    <section id="practicas" class="contenedor">
+        <h2 class="titulo-seccion">Nuestras Prácticas</h2>
+
+        <div class="grilla-tarjetas">
+
+            <!-- Card 1 -->
+            <article class="card">
+                <img src="https://placehold.co/400x300/819A91/FFFFFF?text=Vinyasa+Yoga" alt="Clase de Vinyasa Yoga">
+                <div class="card-info">
+                    <span class="categoria">Dinámico</span>
+                    <h3>Vinyasa Flow Yoga</h3>
+                    <p>Sincronización de respiración y movimiento fluido. Ideal para ganar fuerza y flexibilidad.</p>
+                    <span class="precio">$55.000 / mes</span>
+                    <button><i class="fa-solid fa-spa"></i> Reservar clase</button>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <img src="https://placehold.co/400x300/A2B59F/FFFFFF?text=Yoga+Adultos+Mayores" alt="Yoga para adultos mayores">
+                <div class="card-info">
+                    <span class="categoria">Suave & Adaptado</span>
+                    <h3>Yoga para Adultos Mayores</h3>
+                    <p>Movimientos suaves, enfoque en la movilidad articular, postura y fortalecimiento seguro.</p>
+                    <span class="precio">$42.000 / mes</span>
+                    <button><i class="fa-solid fa-spa"></i> Reservar clase</button>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <img src="https://placehold.co/400x300/D4C3B3/FFFFFF?text=Relajacion+y+Meditacion" alt="Clase de Relajación y Meditación">
+                <div class="card-info">
+                    <span class="categoria">Mente & Calma</span>
+                    <h3>Relajación & Meditación</h3>
+                    <p>Técnicas de Pranayama (respiración) y meditación guiada para reducir el estrés y la ansiedad.</p>
+                    <span class="precio">$60.000 / mes</span>
+                    <button><i class="fa-solid fa-spa"></i> Reservar clase</button>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card">
+                <img src="https://placehold.co/400x300/E8D5C4/FFFFFF?text=Yoga+Embarazadas" alt="Yoga Prenatal para embarazadas">
+                <div class="card-info">
+                    <span class="categoria">Especializado</span>
+                    <h3>Yoga Prenatal / Embarazadas</h3>
+                    <p>Espacio seguro para acompañar los cambios del cuerpo, preparar el parto y conectar con tu bebé.</p>
+                    <span class="precio">$50.000 / mes</span>
+                    <button><i class="fa-solid fa-spa"></i> Reservar clase</button>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="card">
+                <img src="https://placehold.co/400x300/6B8E23/FFFFFF?text=Yoga+Dinamico" alt="Yoga Dinámico e Intenso">
+                <div class="card-info">
+                    <span class="categoria">Intensidad Media/Alta</span>
+                    <h3>Yoga Dinámico</h3>
+                    <p>Práctica física enérgica orientada al tono muscular, la resistencia y la purificación del cuerpo.</p>
+                    <span class="precio">$60.000 / mes</span>
+                    <button><i class="fa-solid fa-spa"></i> Reservar clase</button>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="card">
+                <img src="https://placehold.co/400x300/C8A2C8/FFFFFF?text=Kundalini+Yoga" alt="Kundalini Yoga">
+                <div class="card-info">
+                    <span class="categoria">Energético</span>
+                    <h3>Kundalini Yoga</h3>
+                    <p>Trabajo con mantras, mudras y kriyas para despertar la energía vital y elevar la conciencia.</p>
+                    <span class="precio">$60.000 / mes</span>
+                    <button><i class="fa-solid fa-spa"></i> Reservar clase</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Seccion de contacto: datos a la izquierda, mapa a la derecha -->
+    <section id="contacto" class="contenedor">
+        <h2 class="titulo-seccion">Dónde encontrarnos</h2>
+
+        <div class="bloque-contacto">
+    
+            <!-- Columna de datos -->
+            <div class="datos-contacto">
+                <h3>Nuestro Estudio</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i>Av. Libertador 6500, Belgrano CABA</li>
+                    <li><i class="fa-solid fa-clock"></i> Lunes a sábados de 08:00 a 20:30 hs</li>
+                </ul>
+
+                <h3>Contacto & Consultas</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> Recepción: <a href="tel:+541145550001">+54 11 4555-0001</a></li>
+                    <li><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="tel:+5491145550003">+54 9 11 4555-0003</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:hola@maramar.com.ar">hola@maramar.com.ar</a></li>
+                </ul>
+                <p class="nota">Datos de contacto de ejemplo para la práctica.</p>
+            </div>
+
+            <!-- Columna del mapa: iframe de Google Maps -->
+            <div class="mapa">
+                <title>"Mapa Estudio de Yoga Belgrano"</title>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.05021118153!2d-58.45436342488761!3d-34.55228405478269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42e1ce4202b%3A0x948fa1295af70e25!2sAv.%20del%20Libertador%206500%2C%20C1428%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1790967063269!5m2!1ses!2sar" 
+                width="600" height="450" style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<!-- ############################ FOOTER ###############################   -->
+<footer class="footer">
+    <div class="contenedor footer-columnas">
+
+        <!-- Columna 1: sobre el estudio -->
+        <div class="columna">
+            <h4>MarAMar Studio</h4>
+            <p>Espacio dedicado a la práctica, la meditación y el bienestar integral en el corazón de la ciudad.</p>
+            <p>&copy; 2026 MarAmar Yoga. Todos los derechos reservados.</p>
+            <p class="credito-foto">
+                Foto de <a href="https://unsplash.com/@ginnyrosestewart" target="_blank" rel="noopener">Ginny Rose Stewart</a> en <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>
+            </p>
+        </div>
+
+        <!-- Columna 2: contacto -->
+        <div class="columna">
+            <h4>Contacto</h4>
+            <ul>
+                <li><i class="fa-solid fa-envelope"></i> hola@maramar.com.ar</li>
+                <li><i class="fa-solid fa-phone"></i> +54 11 4555-0001</li>
+                <li><i class="fa-brands fa-whatsapp"></i> +54 9 11 4555-0003</li>
+                <li><i class="fa-solid fa-location-dot"></i> Belgrano, CABA - Argentina</li>
+            </ul>
+        </div>
+
+        <!-- Columna 3: redes sociales -->
+        <div class="columna">
+            <h4>Seguinos</h4>
+            <p>@MarAMar.studio</p>
+            <div class="redes">
+                <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,410 @@
+/* ###################################################################
+PAGINA YOGA - HOJA DE ESTILOS CSS - PRE ENTREGA FRONT END TALENTO TECH
+###################################################################### */
+
+/* ------------------------------------------------------------------
+1. RESETEO BASICO Y ESTILOS GENERALES
+--------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #FAFAF8;
+    color: #2C3531;
+    line-height: 1.6;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ------------------------------------------------------------------
+2. ESTRUCTURA Y CONTENEDORES 
+--------------------------------------------------------------------- */
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #5C766D;
+    margin: 50px 0 30px 0;
+    font-weight: 600;
+    /* Agrego un borde y espacio */
+    border-bottom: 3px solid #D4A373;
+    padding-bottom: 10px;
+    display: inline-block;  /* permite q el borde mida lo mismo q el texto*/
+}
+/* --------------------------------------------------------------------------
+3. ENCABEZADO Y NAVEGACIÓN
+-------------------------------------------------------------------------- */
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+}
+.barra-nav {
+    display: flex;
+    justify-content: space-between;  /* El logo a la izquierda, el menú a la derecha */
+    align-items: center;             /* Alinea logo y menú a la misma altura */
+    padding: 18px 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #5C766D;
+    letter-spacing: 1px;
+}
+
+.logo span{
+    color: #D4A373;
+    font-weight: 300;
+}
+/* El menú desordenado, en fila y sin puntitos */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+    text-decoration: none;      /* Quita el subrayado de los enlaces */
+    color: #2C3531;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover{
+    color: #5C766D;           /* Color al pasar el mouse por encima */
+}
+/* Destaco el botón de reserva en el menú */
+.menu .boton-menu {
+    background-color: #5C766D;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+.menu .boton-menu:hover {
+    background-color: #8A9A86;
+}
+/* --------------------------------------------------------------------------
+4. SECCION HERO 
+-------------------------------------------------------------------------- */
+.hero {
+    background-image: url('../imagenes/ginny-rose-stewart-UxkcSzRWM2s-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* definí un alto o padding para que la imagen tenga espacio de visibilidad */
+    min-height: 450px;
+    /* Flexbox para centrar el contenido vertical y horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 650px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #D4A373;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.boton:hover {
+    background-color: #c09163;
+    transform: translateY(-2px);
+}
+/* --------------------------------------------------------------------------
+5. GRILLA DE PRÁCTICAS / TARJETAS (con Flexbox)
+-------------------------------------------------------------------------- */
+.grilla-tarjetas {
+    display: flex;       /* Permite que las tarjetas bajen a la siguiente fila */
+    flex-wrap: wrap;            /* Si no entran todas en fila, bajan a la siguiente */
+    justify-content: center;    /* Centra las tarjetas horizontalmente */
+    gap: 20px;                  /* Espacio uniforme entre tarjetas */
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    /* Configuración Flexbox para cada tarjeta */
+    width: 280px;               /* Ancho fijo para cada tarjeta */
+    display: flex;
+    flex-shrink: 0;             /* para que las cards no se deformen ni se aplasten */
+    flex-direction: column;     /* Estructura vertical para el contenido interno */
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(92, 118, 109, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;             /* Hace que todas las tarjetas mantengan el mismo alto */
+    justify-content: center;  /* Centra el contenido verticalmente */
+    align-items: center;      /* Centra los elementos horizontalmente */
+    text-align: center;       /* Centra el texto */
+}
+
+
+.categoria {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #D4A373;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.card-info p {
+    font-size: 0.95rem;
+    color: #66706B;
+    margin-bottom: 18px;
+    flex-grow: 1;
+}
+
+.precio {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #5C766D;
+    margin-bottom: 15px;
+}
+
+.card-info button {
+    background-color: #5C766D;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-info button:hover {
+    background-color: #5C766D;
+}
+/* --------------------------------------------------------------------------
+6. SECCIÓN DE CONTACTO Y MAPA (con Flexbox)
+Otro flex: datos a un lado y el mapa al otro.
+Con flex-wrap, en celular el mapa baja abajo de los datos.
+-------------------------------------------------------------------------- */
+.bloque-contacto {
+    display: flex;
+    flex-direction: row;                       /* Pone los datos y el mapa uno al lado del otro */
+    gap: 40px;                                 /* Espacio entre los datos de contacto y el mapa */
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+}
+/* Le doy 50% de ancho a cada columna dentro del flex */
+.datos-contacto,
+.mapa {
+    flex: 1;                          /* Hace que ambas columnas ocupen el mismo espacio */
+    width: 100%;
+}
+
+.datos-contacto h3 {
+    color: #5C766D;
+    margin: 20px 0 10px 0;
+    font-size: 1.25rem;
+}
+
+.datos-contacto h3:first-child {
+    margin-top: 0;
+}
+
+.datos-contacto ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+.datos-contacto li {
+    margin-bottom: 10px;
+    display: flex;                    /* Flexbox para alinear el icono con el texto */
+    align-items: center;
+    gap: 12px;
+    color: #66706B;
+}
+
+.datos-contacto i {
+    color: #D4A373;
+    width: 18px;
+}
+
+.datos-contacto a {
+    color: #66706B;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.datos-contacto a:hover {
+    color: #5C766D;
+}
+
+.nota {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #999;
+    margin-top: 15px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    border-radius: 8px;
+    border: none;
+}
+/* --------------------------------------------------------------------------
+7. FOOTER 
+-------------------------------------------------------------------------- */
+.footer {
+    background-color: #5C766D;
+    color: #FFFFFF;
+    padding: 50px 0 30px 0;
+    margin-top: 60px;
+}
+/* Contenedor Flexbox para distribuir las 3 columnas */
+.footer-columnas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;   /* Permite que las columnas se acomoden en pantallas chicas */
+    gap: 30px;
+}
+/* Cada columna en la fila */
+.columna {
+    flex: 1;
+    min-width: 250px;  /* Ancho mínimo para que no se compriman en exceso */
+}
+/* Encabezados de las columnas */
+.columna h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #D4A373;  /* Detalle de color en los títulos */
+    font-weight: 600;
+}
+
+.columna p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+/* Lista de contacto */
+.columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.columna ul li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.columna ul li i {
+    color: #D4A373;    /* Color para los íconos de contacto */
+}
+/* Redes sociales */
+.redes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.redes a {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.redes a:hover {
+    background-color: #D4A373;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+}
+/* Crédito de la foto de Unsplash */
+.credito-foto {
+    font-size: 0.8rem;
+    opacity: 0.85;
+    margin-top: 12px;
+}
+
+.credito-foto a {
+    color: #F0F66E;
+    text-decoration: underline;
+}
+
+.credito-foto a:hover {
+    color: #FFFFFF;
+}
+
+
+
+
